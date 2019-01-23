@@ -1,0 +1,94 @@
+doctype html
+html
+    head
+        title PageTitle
+        link(rel="stylesheet" href='style/foundation.css')
+        link(rel="stylesheet" href='style/style.css')
+    body
+        header.header-main
+            nav.header-main__menu
+                ul.header-main__list
+                    li.header-main__item ИНФОРМАЦИЯ
+                    li.header-main__item НОВОСТИ
+                    li.header-main__item ПРАЙС-ЛИСТ
+                    li.header-main__item
+                        a(href="shop.html") МАГАЗИН
+                    li.header-main__item КОНТАКТЫ
+                .user-login
+                    img.user-login__img(src="" alt="SignIn")
+                    .user-login__text ВХОД
+            .logo
+                img.logo__img(src="" alt="SignIn")
+        main.container
+            h1.page-title ПРАЙС-ЛИСТ
+            ul.breadcrumbs
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="index.html") ГЛАВНАЯ
+                    li.breadcrumbs-current ПРАЙС-ЛИСТ
+            h2.main-title ИСТИННО МУЖСКАЯ КЛАССИКА
+            section.facilities
+                h3.facilities__title МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:
+                ul.facilities__list
+                    li.facilities__item Baxter of California
+                    li.facilities__item Mr Natty
+                    li.facilities__item Suavecito
+                    li.facilities__item Malin+Goetz
+            section.master-price
+                h3.master-price__title ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:
+                table
+                    tr
+                        td СТРИЖКА
+                        td 1500Р
+                    tr
+                        td СТРИЖКА БОРОДЫ
+                        td 500Р
+                    tr
+                        td НАКРУТКА УСОВ
+                        td 350Р
+            section.about-us
+                h3.about-us__title НЕСКОЛЬКО СЛОВ О НАС:
+                p.about-us__text
+                    span Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+                    span Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+            footer.footer-main
+                p.footer-main__address
+                    | БАРБЕРШОП «БОРОДИНСКИЙ»
+                    br
+                    | АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ,
+                    br
+                    | Д. 19/8
+                    br
+                    | КАК НАС НАЙТИ?
+                .footer-socials
+                    .footer-socials__title Давайте Дружить!
+                        ul.social
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Вконтакте")
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Фейсбук")
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Инстаграм")
+                .footer-copyright
+                    button.btn.btn__copy HTML ACADEMY
+            section.modal.modal-login
+                h2 ЛИЧНЫЙ КАБИНЕТ
+                p.modal-login__text ВВедите пожалуйста свой логин и пароль
+                form.login-form
+                    p
+                        input(class="login-user" placeholder="Логин" type="text" name="user")
+                    p
+                        input(class="login-password" placeholder="Пароль" type="text" name="password")
+                    p
+                        input(class="visually-hidden" type="checkbox" name="remember")
+                        | Запомните меня
+                        a(href="#") Я ЗАБЫЛ ПАРОЛЬ!
+                button.btn.btn__enter(type="submit") ВОЙТИ
+                span.modal-close X
+
+
+
+        script(src='js/foundation.js')
+        script(src='js/main.js')

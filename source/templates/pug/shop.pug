@@ -1,0 +1,144 @@
+doctype html
+html
+    head
+        title PageTitle
+        link(rel="stylesheet" href='style/foundation.css')
+        link(rel="stylesheet" href='style/style.css')
+    body
+        header.header-main
+            nav.header-main__menu
+                ul.header-main__list
+                    li.header-main__item ИНФОРМАЦИЯ
+                    li.header-main__item НОВОСТИ
+                    li.header-main__item ПРАЙС-ЛИСТ
+                    li.header-main__item МАГАЗИН
+                    li.header-main__item КОНТАКТЫ
+                .user-login
+                    img.user-login__img(src="" alt="SignIn")
+                    .user-login__text ВХОД
+            .logo
+                img.logo__img(src="" alt="SignIn")
+        main.container
+            h2.page-title СРЕДСТВА ДЛЯ УХОДА
+            ul.breadcrumbs
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Магазин
+                li.breadcrumbs-current средства для ухода
+            section.filters
+                h2.visually-hidden Фильт Товаров
+                //- Здесь будет фильт торваров
+            section.catalog
+                h2.visually-hidden СРЕДСТВА ДЛЯ УХОДА
+                ul.catalog__list
+                    li.catalog__item
+                        p
+                            a
+                                img.catalog__img(src="", alt="Набор для путешествий «Baxter of California»"
+                                width="220",  height="165")
+                        span.catalog__category Набор для путешествий
+                        span.catalog__item-title «Baxter of California»
+                        p.catalog__item-price
+                            b.catalog__price 2900р
+                            button.btn.btn__buy Купить
+                    li.catalog__item
+                        p
+                            a
+                                img.catalog__img(src="", alt="Увлажняющий кондиционер «Baxter of California»"
+                                width="220",  height="165")
+                        span.catalog__category Увлажняющий кондиционер
+                        span.catalog__item-title «Baxter of California»
+                        p.catalog__item-price
+                            b.catalog__price 750р
+                            button.btn.btn__buy Купить
+                    li.catalog__item
+                        p
+                            a
+                                img.catalog__img(src="", alt="Гель для волос «SUAVECITO»"
+                                width="220",  height="165")
+                        span.catalog__category Гель для волос
+                        span.catalog__item-title «SUAVECITO»
+                        p.catalog__item-price
+                            b.catalog__price 290р
+                            button.btn.btn__buy Купить
+                    li.catalog__item
+                        p
+                            a
+                                img.catalog__img(src="", alt="Глина для укладки волос «American crew»"
+                                width="220",  height="165")
+                        span.catalog__category Глина для укладки волос
+                        span.catalog__item-title «American crew»
+                        p.catalog__item-price
+                            b.catalog__price 500р
+                            button.btn.btn__buy Купить
+                    li.catalog__item
+                        p
+                            a
+                                img.catalog__img(src="", alt="Гель для волос «AMERICAN CREW»"
+                                width="220",  height="165")
+                        span.catalog__category Гель для волос
+                        span.catalog__item-title «AMERICAN CREW»
+                        p.catalog__item-price
+                            b.catalog__price 300р
+                            button.btn.btn__buy Купить
+                    li.catalog__item
+                        p
+                            a
+                                img.catalog__img(src="", alt="Набор для бритья «Baxter of California»"
+                                width="220",  height="165")
+                        span.catalog__category Набор для бритья
+                        span.catalog__item-title «Baxter of California»
+                        p.catalog__item-price
+                            b.catalog__price 3900р
+                            button.btn.btn__buy Купить
+                ul.pagination-list
+                    li.pagination-item
+                        a(href="#") 1
+                    li.pagination-item.pagination-item-current
+                        a(href="#") 2
+                    li.pagination-item
+                        a(href="#") 3
+                    li.pagination-item
+                        a(href="#") 4
+            footer.footer-main
+                p.footer-main__address
+                    | БАРБЕРШОП «БОРОДИНСКИЙ»
+                    br
+                    | АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ,
+                    br
+                    | Д. 19/8
+                    br
+                    | КАК НАС НАЙТИ?
+                .footer-socials
+                    .footer-socials__title Давайте Дружить!
+                        ul.social
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Вконтакте")
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Фейсбук")
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Инстаграм")
+                .footer-copyright
+                    button.btn.btn__copy HTML ACADEMY
+            section.modal.modal-login
+                h2 ЛИЧНЫЙ КАБИНЕТ
+                p.modal-login__text ВВедите пожалуйста свой логин и пароль
+                form.login-form
+                    p
+                        input(class="login-user" placeholder="Логин" type="text" name="user")
+                    p
+                        input(class="login-password" placeholder="Пароль" type="text" name="password")
+                    p
+                        input(class="visually-hidden" type="checkbox" name="remember")
+                        | Запомните меня
+                        a(href="#") Я ЗАБЫЛ ПАРОЛЬ!
+                button.btn.btn__enter(type="submit") ВОЙТИ
+                span.modal-close X
+
+
+        script(src='js/foundation.js')
+        script(src='js/main.js')

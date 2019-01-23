@@ -11,7 +11,8 @@ html
                     li.header-main__item ИНФОРМАЦИЯ
                     li.header-main__item НОВОСТИ
                     li.header-main__item ПРАЙС-ЛИСТ
-                    li.header-main__item МАГАЗИН
+                    li.header-main__item
+                        a(href="shop.html") МАГАЗИН
                     li.header-main__item КОНТАКТЫ
                 .user-login
                     img.user-login__img(src="" alt="SignIn")
@@ -32,7 +33,7 @@ html
                         h2.advantage__title ДОРОГО
                         p.advantage__text НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
             section.news
-                h2.news__title
+                h2 НОВОСТИ
                 ul.news__list
                     li.news__item
                         p.news__text НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
@@ -42,7 +43,86 @@ html
                         time(datetime="2019-01-18") 18 января
                 a.btn.btn-news(href="news.html") Все Новости
             section.gallery
-                h2.gallery__title ФОТОГАЛЕРЕЯ
+                h2 ФОТОГАЛЕРЕЯ
+                figure.gallery-content
+                    a(href="#")
+                        img(src="" alt="Интерьевр")
+                button.btn.btn__nav НАЗАД
+                button.btn.btn__nav ВПЕРЕД
+            section.contacts
+                h2.contacts__title КОНТАКТНАЯ ИНФОРМАЦИЯ
+                p.contacts__address
+                    |БАРБЕРШОП «БОРОДИНСКИЙ»
+                    br
+                    | АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+                    bt
+                    | ТЕЛЕФОН: +7 (495) 666-02-66
+                p.contacts__time
+                    |ВРЕМЯ РАБОТЫ:
+                    br
+                    |ПН—ПТ: С 10:00 ДО 22:00
+                    br
+                    |СБ—ВС: С 10:00 ДО 19:00
+                a.btn.btn__nav(href="#") КАК ПРОЕХАТЬ
+                a.btn.btn__nav(href="#") ОБРАТНАЯ СВЯЗЬ
+            section.appointment
+                h2 ЗАПИСАТЬСЯ
+                p УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ
+                form.appointment__form
+                    label.appointment__label ДАТА
+                    input(type="text" name="date" placeholder="08.10.2019" value="")
+                    label.appointment__label ВРЕМЯ
+                    input(type="text" name="time" placeholder="10:00" value="")
+                    label.appointment__label ВАШЕ ИМЯ
+                    input(type="text" name="name" placeholder="Борода" value="")
+                    label.appointment__label ТЕЛЕФОН
+                    input(type="tel" name="phone" placeholder="+7 123 456-78-90" value="")
+                button.brn.btn__send ОТПРАВИТЬ
+            footer.footer-main
+                p.footer-main__address
+                    |БАРБЕРШОП «БОРОДИНСКИЙ»
+                    br
+                    |АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ,
+                    br
+                    |Д. 19/8
+                    br
+                    |КАК НАС НАЙТИ?
+                .footer-socials
+                    .footer-socials__title Давайте Дружить!
+                        ul.social
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Вконтакте")
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Фейсбук")
+                            li
+                                a.social__item(href="#")
+                                    img.social__img(src="" alt="Инстаграм")
+                .footer-copyright
+                    button.btn.btn__copy HTML ACADEMY
+            section.modal.modal-login
+                h2 ЛИЧНЫЙ КАБИНЕТ
+                p.modal-login__text ВВедите пожалуйста свой логин и пароль
+                form.login-form
+                    p
+                        input(class="login-user" placeholder="Логин" type="text" name="user")
+                    p
+                        input(class="login-password" placeholder="Пароль" type="text" name="password")
+                    p
+                        input(class="visually-hidden" type="checkbox" name="remember")
+                        | Запомните меня
+                        a(href="#") Я ЗАБЫЛ ПАРОЛЬ!
+                button.btn.btn__enter(type="submit") ВОЙТИ
+                span.modal-close X
+            section.modal.modal-map
+                h2.visually-hidden Как добраться до нас
+                span.visually-hidden X
+
+
+
+
+
 
 
 
