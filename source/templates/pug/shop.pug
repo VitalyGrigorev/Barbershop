@@ -5,19 +5,21 @@ html
         link(rel="stylesheet" href='style/foundation.css')
         link(rel="stylesheet" href='style/style.css')
     body
+
         header.header-main
             nav.header-main__menu
                 ul.header-main__list
                     li.header-main__item ИНФОРМАЦИЯ
                     li.header-main__item НОВОСТИ
                     li.header-main__item ПРАЙС-ЛИСТ
-                    li.header-main__item МАГАЗИН
+                    li.header-main__item
+                        a(href="shop.html") МАГАЗИН
                     li.header-main__item КОНТАКТЫ
                 .user-login
-                    img.user-login__img(src="" alt="SignIn")
+                    img.user-login__img(src="images/login.svg", alt="SignIn", width="16", height="16")
                     .user-login__text ВХОД
             .logo
-                img.logo__img(src="" alt="SignIn")
+                img.logo__img(src="images/index-logo.svg", alt="logo", width="111", height="24")
         main.container
             h2.page-title СРЕДСТВА ДЛЯ УХОДА
             ul.breadcrumbs
@@ -35,7 +37,8 @@ html
                     li.catalog__item
                         p
                             a
-                                img.catalog__img(src="", alt="Набор для путешествий «Baxter of California»"
+                                img.catalog__img(src="images/shop-item1.jpg", alt="Набор для путешествий «Baxter of " +
+                                "California»"
                                 width="220",  height="165")
                         span.catalog__category Набор для путешествий
                         span.catalog__item-title «Baxter of California»
@@ -45,7 +48,8 @@ html
                     li.catalog__item
                         p
                             a
-                                img.catalog__img(src="", alt="Увлажняющий кондиционер «Baxter of California»"
+                                img.catalog__img(src="images/shop-item2.jpg", alt="Увлажняющий кондиционер «Baxter of" +
+                                " California»"
                                 width="220",  height="165")
                         span.catalog__category Увлажняющий кондиционер
                         span.catalog__item-title «Baxter of California»
@@ -55,7 +59,7 @@ html
                     li.catalog__item
                         p
                             a
-                                img.catalog__img(src="", alt="Гель для волос «SUAVECITO»"
+                                img.catalog__img(src="images/shop-item3.jpg", alt="Гель для волос «SUAVECITO»"
                                 width="220",  height="165")
                         span.catalog__category Гель для волос
                         span.catalog__item-title «SUAVECITO»
@@ -65,7 +69,8 @@ html
                     li.catalog__item
                         p
                             a
-                                img.catalog__img(src="", alt="Глина для укладки волос «American crew»"
+                                img.catalog__img(src="images/shop-item4.jpg", alt="Глина для укладки волос «American " +
+                                "crew»"
                                 width="220",  height="165")
                         span.catalog__category Глина для укладки волос
                         span.catalog__item-title «American crew»
@@ -75,7 +80,7 @@ html
                     li.catalog__item
                         p
                             a
-                                img.catalog__img(src="", alt="Гель для волос «AMERICAN CREW»"
+                                img.catalog__img(src="images/shop-item5.jpg", alt="Гель для волос «AMERICAN CREW»"
                                 width="220",  height="165")
                         span.catalog__category Гель для волос
                         span.catalog__item-title «AMERICAN CREW»
@@ -85,7 +90,8 @@ html
                     li.catalog__item
                         p
                             a
-                                img.catalog__img(src="", alt="Набор для бритья «Baxter of California»"
+                                img.catalog__img(src="images/shop-item6.jpg", alt="Набор для бритья «Baxter of " +
+                                "California»"
                                 width="220",  height="165")
                         span.catalog__category Набор для бритья
                         span.catalog__item-title «Baxter of California»
@@ -115,13 +121,13 @@ html
                         ul.social
                             li
                                 a.social__item(href="#")
-                                    img.social__img(src="" alt="Вконтакте")
+                                    img.social__img(src="images/vk.svg" alt="Вконтакте", width="20", height="20")
                             li
                                 a.social__item(href="#")
-                                    img.social__img(src="" alt="Фейсбук")
+                                    img.social__img(src="images/facebook.svg" alt="Фейсбук", width="20", height="20")
                             li
                                 a.social__item(href="#")
-                                    img.social__img(src="" alt="Инстаграм")
+                                    img.social__img(src="images/instagram.svg" alt="Инстаграм", width="20", height="20")
                 .footer-copyright
                     button.btn.btn__copy HTML ACADEMY
             section.modal.modal-login
